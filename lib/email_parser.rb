@@ -6,9 +6,7 @@ class EmailAddressParser
   end
 
   def parse
-    email_array = []
-    email_array << @emails.split(/, | /).uniq
-    email_array
+    @emails.split(/, | /).uniq
   end
 
 end
